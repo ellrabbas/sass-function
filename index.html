@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametreli SASS funksiyaları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="eyebrows">
+            <div class="left-eyebrow">
+                <img src="./assets/png-transparent-eyebrow-scape-hair-people-black-feather-removebg-preview.png"
+                    alt="eyebrow" width="250">
+            </div>
+            <div class="right-eyebrow">
+                <img src="./assets/right-transparent-eyebrow-scape-hair-people-black-feather-removebg-preview.png"
+                    alt="eyebrow" width="250">
+            </div>
+        </div>
+        <div class="eye-box">
+            <div class="eye"></div>
+            <div class="eye"></div>
+        </div>
+        <div class="mouth">
+            <img src="./assets/kisspng-mouth-lip-smile-clip-art-objects-5ad046d2730984.3183948615235990584712-removebg-preview.png"
+                alt="mouth" width="170">
+        </div>
+        <div class="info-box">
+            <div class="left side">Elmar Abbasov</div>
+            <div class="right side">Parametrli SASS funksiyaları</div>
+        </div>
+    </div>
+
+    <div class="desc-container">
+        <div class="sass-desc">
+            <div class="tenor-gif-embed" data-postid="19466821" data-share-method="host" data-aspect-ratio="1.01587"
+                data-width="10%"><a href="https://tenor.com/view/thinking-gif-19466821">Thinking Sticker</a>from <a
+                    href="https://tenor.com/search/thinking-stickers">Thinking Stickers</a></div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <h1>Bəs SASS(SCSS) nədir?</h1>
+        </div>
+        <div class="sass-exp">
+            <p>Syntactically (Awesome Style Sheets) ifadəsinin qısaltması olan SASS ən tanınmış CSS ön prosessorlarından
+                biridir. CSS-də olmayan xüsusiyyətləri istifadə edərək CSS-i daha sürətli və rahat istifadə etməyimizə
+                kömək olur. SCSS isə Sassy Cascading Style Sheets mənasını verir. SCSS çox vaxt SASS olaraq
+                adlandırılırdı, çünki yalnız aralarında sadəcə sintaktik fərqi var idi. Bildiyimiz kimi CSS-də bir class
+                təyin etmək
+                üçün {}, ; -bu simvollardan istifadə edirik. Ancaq SASS-da bu simvollardan istifadə etmək olmaz çünki
+                SASS bu simvolları dəstəkləmir. </p>
+        </div>
+        <div class="btn-fld">
+            <button class="btn-create">
+                Tərtibat komandası
+            </button>
+        </div>
+        <div class="designers">
+            <div class="f">
+                <img src="./assets/sjIeaoofQTJB0HfieQSCQuVKK2LOtfmZz04wnIzD.png" alt="designer" width="200">
+                <span>Hempton Ketlin</span>
+            </div>
+            <div class="s">
+                <img src="./assets/1559151777781.jpg" alt="designer" width="200">
+                <span>Kris Epstin</span>
+            </div>
+            <div class="t">
+                <img src="./assets/188.jpg" alt="designer" width="200">
+                <span>Natali Veyzenbaum</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="func-container">
+        <div class="func-title">
+            <h1>Parametrli SASS funksiyaları</h1>
+        </div>
+        <div class="func-desc">
+            <p>
+                Sass-da parametrləşdirilmiş funksiyalar bizə arqumentləri qəbul edən təkrar istifadə edilə bilən kod
+                parçaları yaratmağa imkan verir. Buna dair aşağıda nümunə göstərilmişdir:
+            </p>
+        </div>
+        <div class="code-fld">
+            <pre>
+            // Gradient arxa fon üçün parametrli Sass funksiyası
+            @function generate-gradient($reng1, $reng2, $istigamet) {
+            @return linear-gradient($istigamet, $reng1, $reng2);
+            }
+
+            // Funksiyanın istifadəsi
+            .element {
+            background: generate-gradient(#3498db, #e74c3c, to right);
+            }
+        </pre>
+        </div>
+    </div>
+
+    <div class="end">
+        <h1>Dinlədiyiniz üçün təşəkkürlər <span>&#129303;</span></h1>
+        <img src="./assets/AU1t.gif" width="550">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
